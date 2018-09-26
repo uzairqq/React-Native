@@ -1,17 +1,20 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 
 const Header = () => {
-    const { textStyle } = styles;
-
-
+    const { textStyle, viewStyle } = styles;
     return (
-        <Text style={textStyle}>Some text UZAIR</Text>
+        <View style={viewStyle}>
+            <Text style={textStyle}>Some text UZAIR</Text>
+        </View>
     );
 }
 
 const styles = {
+    viewStyle: {
+        backgroundColor: 'green'
+    },
     textStyle: {
         fontSize: 100
     }
