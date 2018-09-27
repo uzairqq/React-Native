@@ -5,7 +5,7 @@ import Header from './src/components/Header';
 
 
 //Create a component
-const App = () => (<Header />);
+const App = () => (<Header headerText='Albums!!!' />);
 
 //Render that component
 AppRegistry.registerComponent('AwesomeProject', () => App);
