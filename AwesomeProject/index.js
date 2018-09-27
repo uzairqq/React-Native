@@ -1,11 +1,19 @@
 // Import a library to help to create a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { View, AppRegistry } from 'react-native';
 import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 
 //Create a component
-const App = () => (<Header headerText='Albums!!!' />);
+const App = () => (
+    <View>
+        <Header headerText='Albums!!!!' />
+        <AlbumList />
+    </View>
+
+);
+
 
 //Render that component
 AppRegistry.registerComponent('AwesomeProject', () => App);
