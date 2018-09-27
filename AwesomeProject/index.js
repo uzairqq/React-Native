@@ -6,13 +6,16 @@ import AlbumList from './src/components/AlbumList';
 
 
 //Create a component
-const App = () => (
-    <View>
-        <Header headerText='Albums!!!!' />
-        <AlbumList />
-    </View>
+const App = () => {
+    return (
+        <View>
+            <Header headerText='Albums!!!!' />
+            <AlbumList />
+        </View>
+    )
+};
 
-);
+
 
 
 //Render that component
