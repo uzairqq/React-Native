@@ -9,12 +9,18 @@ class AlbumList extends Component {
             .then(response => this.setState({ albums: response.data }));
         // debugger;
     }
+
+    renderAlbums() {
+        return this.state.albums.map(album => <Text>{album.title}</Text>)
+    }
+
+
     render() {
         console.log(this.state);
 
         return (
             <View>
-                <Text>Classss based Album List Component</Text>
+                {this.renderAlbums()}
             </View>
         )
     }
