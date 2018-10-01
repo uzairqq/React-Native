@@ -5,7 +5,7 @@ import AlbumsList from './AlbumList';
 
 const MainComponent = () => {
     return (
-        <View>
+        <View style={{ flex: 1 }}>
             <Header headerText='Albums' />
             <AlbumsList />
         </View>
