@@ -1,14 +1,15 @@
 // Import a library to help to create a component
 import React from 'react';
-import { View, AppRegistry } from 'react-native';
-import MainComponent from '../AwesomeProject/src/components/MainComponent';
+import { View, Text, AppRegistry } from 'react-native';
 
 
 
 //Create a component
 const App = () => {
     return (
-        <MainComponent />
+        <View>
+            <Text>React Native</Text>
+        </View>
     )
 };
 
