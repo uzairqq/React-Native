@@ -1,19 +1,10 @@
 // Import a library to help to create a component
-import React from 'react';
-import { View, Text, AppRegistry } from 'react-native';
+import { AppRegistry } from 'react-native';
+import App from './src/App'
 
 
 
 //Create a component
-const App = () => {
-    return (
-        <View>
-            <Text>React Native</Text>
-        </View>
-    )
-};
-
-
 
 
 //Render that component
