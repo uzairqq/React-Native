@@ -11,6 +11,9 @@ const Card = (props) => {
 
 const styles = {
     containerStyle: {
+        justifyContent: 'center',
+        marginTop: 50,
+
         borderWidth: 1,// simple border
         borderRadius: 2,//rounds borders nicely, rounded edges
         borderColor: '#ddd',//light grey border color,
@@ -19,10 +22,10 @@ const styles = {
         shadowOffset: { width: 0, height: 2 }, // what side of the border want shadow.in this case no shadow on width but on height 
         shadowOpacity: 0.1,//give darkness or light. opacity between 0 to 1.
         shadowRadius: 2,//just like border radius
-        elevation: 1,
-        marginLeft: 5,//to give space in left
-        marginRight: 5,//to give space in right
-        marginTop: 10//to give space in top
+        // elevation: 1,
+        // marginLeft: 5,//to give space in left
+        // marginRight: 5,//to give space in right
+        // marginTop: 10//to give space in top
     }
 }
 

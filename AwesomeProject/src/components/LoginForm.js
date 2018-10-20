@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Card, CardSection, Input } from './common';
+import { Button, Card, CardSection, Input, View } from './common';
 
 class LoginForm extends Component {
     state = { email: '', password: '' };
@@ -7,6 +7,7 @@ class LoginForm extends Component {
     render() {
         return (
             <Card>
+
                 <CardSection>
                     <Input
                         placeHolder="Enter Your Email"
@@ -15,14 +16,15 @@ class LoginForm extends Component {
                         onChangeText={email => this.setState({ email })}
                     />
                 </CardSection>
-                <CardSection />
-                <Input
-                    placeHolder="Enter Your Password"
-                    label="Password"
-                    secureTextEntry={true}
-                    value={this.state.password}
-                    onChangeText={password => this.setState({ password })}
-                />
+                <CardSection>
+                    <Input
+                        placeHolder="Enter Your Password"
+                        label="Password"
+                        secureTextEntry={true}
+                        value={this.state.password}
+                        onChangeText={password => this.setState({ password })}
+                    />
+                </CardSection>
                 <CardSection>
                     <Button>Login</Button>
                 </CardSection>
