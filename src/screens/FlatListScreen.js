@@ -28,7 +28,7 @@ const FlatListScreen = () => {
 
 const styles=StyleSheet.create({
     list:{
-        fontSize: 100,
+        marginVertical:50,
     }
 })
 
