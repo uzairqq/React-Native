@@ -16,6 +16,8 @@ return(
     <View>
         <Text>List Screen</Text>
         <FlatList 
+        horizontal
+        showsHorizontalScrollIndicator={false}
         keyExtractor={(freind)=> freind.name}
         data={freinds}
         renderItem={({item})=>{
