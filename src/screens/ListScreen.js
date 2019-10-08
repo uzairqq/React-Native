@@ -4,13 +4,13 @@ import { Text, View,FlatList } from 'react-native';
 const ListScreen = () => {
 
    const freinds=[
-       {name:'Freind #1'},
-       {name:'Freind #2'},
-       {name:'Freind #3'},
-       {name:'Freind #4'},
-       {name:'Freind #5'},
-       {name:'Freind #6'},
-       {name:'Freind #7'}
+       {key:'1',name:'Freind #1'},
+       {key:'2',name:'Freind #2'},
+       {key:'3',name:'Freind #3'},
+       {key:'4',name:'Freind #4'},
+       {key:'5',name:'Freind #5'},
+       {key:'6',name:'Freind #6'},
+       {key:'7',name:'Freind #7'}
    ]
 return(
     <View>
