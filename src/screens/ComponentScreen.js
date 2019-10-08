@@ -4,12 +4,12 @@ import {Text,StyleSheet,View} from 'react-native';
 
 const ComponentScreen=()=>{
 
-    const greeting='hello there! My name is Uzair'
+    const greeting=<Text>hello there! My name is Uzair</Text>
 
     return( 
     <View>
         <Text style={styles.textStyle}>Hi There from Component Screen</Text>
-        <Text>{greeting}</Text>
+        {greeting}
         </View>
         )
 };
