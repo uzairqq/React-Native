@@ -4,6 +4,8 @@ import ComponentScreen from './src/screens/ComponentScreen';
 import ExcerciseScreen from './src/screens/ExcerciseScreen';
 import ListScreen from './src/screens/ListScreen';
 import FlatListScreen from './src/screens/FlatListScreen';
+import ImageScreen from './src/screens/ImageScreen';
+
 
 
 const navigator = createStackNavigator(
@@ -12,7 +14,8 @@ const navigator = createStackNavigator(
     Components:ComponentScreen,
     Excercise:ExcerciseScreen,
     List:ListScreen,
-    FlatList:FlatListScreen
+    FlatList:FlatListScreen,
+    Image:ImageScreen
   },
   {
     initialRouteName: 'Home',

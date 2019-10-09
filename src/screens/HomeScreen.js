@@ -8,15 +8,12 @@ const HomeScreen = ({navigation: {navigate}}) => {
   
     <View>
   <Text style={styles.text}>HomeScreen and uzair</Text>
-   <Button title="Go to Components Demo" onPress={()=>navigate('Components')}/>
-   <Button title="Go to Excercise Demo" onPress={()=>navigate('Excercise')}/>
-   <Button title="Go to FlatList Demo" onPress={()=>navigate('FlatList')}/>
-   <Button title="Go to List Demo" onPress={()=>navigate('List')}/>
-
     <TouchableOpacity onPress={()=>{navigate('Components')}}>
       <Text>Go to Components Demo</Text>
     </TouchableOpacity>
-
+    <TouchableOpacity onPress={()=>{navigate('Image')}}>
+      <Text>Go To Image Screen</Text>
+    </TouchableOpacity>
 
   </View>
   )
