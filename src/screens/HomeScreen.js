@@ -2,7 +2,9 @@ import React,{Fragment} from 'react';
 import { Text, StyleSheet,View,Button,TouchableOpacity } from 'react-native';
 import { ComponentScreen } from "./ComponentScreen";
 
-const HomeScreen = () => {
+const HomeScreen = (props) => {
+console.log(props)
+
   return (
   
     <View>
