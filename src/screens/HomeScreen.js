@@ -3,7 +3,7 @@ import { Text, StyleSheet,View,Button,TouchableOpacity } from 'react-native';
 import { ComponentScreen } from "./ComponentScreen";
 
 const HomeScreen = (props) => {
-console.log(props)
+console.log(props.navigation);
 
   return (
   
