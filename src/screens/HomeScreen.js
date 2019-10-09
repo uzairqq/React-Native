@@ -1,14 +1,19 @@
 import React,{Fragment} from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet,View,Button } from 'react-native';
 import { ComponentScreen } from "./ComponentScreen";
 
 const HomeScreen = () => {
   return (
   
-    <Fragment>
+    <View>
   <Text style={styles.text}>HomeScreen and uzair</Text>
-  {/* <ComponentScreen/> */}
-  </Fragment>
+   <Button title="Go to Components Demo" onPress={()=>console.log('Components Demo Pressed')}/>
+   <Button title="Go to Excercise Demo" onPress={()=>console.log('Excercise Demo Pressed')}/>
+   <Button title="Go to FlatList Demo" onPress={()=>console.log('FlatList Demo Pressed')}/>
+   
+   
+   <Button title="Go to List Demo" onPress={()=>console.log('List Demo Pressed')}/>
+  </View>
   )
 };
 

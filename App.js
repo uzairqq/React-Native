@@ -15,7 +15,7 @@ const navigator = createStackNavigator(
     FlatList:FlatListScreen
   },
   {
-    initialRouteName: 'FlatList',
+    initialRouteName: 'Home',
     defaultNavigationOptions: {
       title: 'App'
     }
