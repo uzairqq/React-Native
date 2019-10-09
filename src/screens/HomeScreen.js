@@ -14,7 +14,7 @@ const HomeScreen = (props) => {
    <Button title="Go to FlatList Demo" onPress={()=>props.navigation.navigate('FlatList')}/>
    <Button title="Go to List Demo" onPress={()=>props.navigation.navigate('List')}/>
 
-    <TouchableOpacity onPress={()=>{console.log('Touchable Components Demo')}}>
+    <TouchableOpacity onPress={()=>{props.navigation.navigate('Components')}}>
       <Text>Go to Components Demo</Text>
     </TouchableOpacity>
 
