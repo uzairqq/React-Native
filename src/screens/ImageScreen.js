@@ -1,11 +1,15 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React from "react";
+import { Text, View } from "react-native";
+import ImageDetails from "../components/ImageDetails";
 
 const ImageScreen = () => {
-return(
+  return (
     <View>
-        <Text>ImageScreen</Text>
+      <ImageDetails title="Forest" />
+      <ImageDetails title="Mountain" />
+      <ImageDetails title="Beach" />
     </View>
-)};
+  );
+};
 
 export default ImageScreen;
