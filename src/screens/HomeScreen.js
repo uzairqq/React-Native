@@ -27,6 +27,13 @@ const HomeScreen = ({ navigation: { navigate } }) => {
       >
         <Text>Go To Counter Increment</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigate("Color");
+        }}
+      >
+        <Text>Go To Random Color Screen</Text>
+      </TouchableOpacity>
     </View>
   );
 };
