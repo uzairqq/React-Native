@@ -1,23 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
 
 const CounterIncrement = () => {
-  let counter = 0;
+  const [counter, setCounter] = useState(0);
 
   return (
     <View>
       <Button
         title="Increment"
         onPress={() => {
-          counter++;
-          console.log(counter);
+          setCounter(counter + 1);
         }}
       ></Button>
       <Button
         title="Decrement"
         onPress={() => {
-          counter--;
-          console.log(counter);
+          setCounter(counter - 1);
         }}
       ></Button>
       <Text>Current Count: {counter}</Text>
