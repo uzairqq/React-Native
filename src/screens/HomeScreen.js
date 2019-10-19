@@ -34,6 +34,13 @@ const HomeScreen = ({ navigation: { navigate } }) => {
       >
         <Text>Go To Random Color Screen</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigate("Square");
+        }}
+      >
+        <Text>Go To Square Screen</Text>
+      </TouchableOpacity>
     </View>
   );
 };
