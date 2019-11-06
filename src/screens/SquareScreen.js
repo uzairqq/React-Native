@@ -7,6 +7,9 @@ const COLOR_INCREMENT = 50;
 const reducer = (state, action) => {
   switch (action.colorToChange) {
     case "red":
+      if (state.red + action.amount > 255 || state.red + action.amount < 0) {
+        return state;
+      }
       return { ...state, red: state.red + action.amount };
     case "green":
       return { ...state, red: state.red + action.amount };
@@ -19,25 +22,41 @@ const reducer = (state, action) => {
 
 const SquareScreen = () => {
   const [state, dispatach] = useReducer(reducer, { red: 0, green: 0, blue: 0 });
+  //dispatch ==> runMyReducer
   console.log(state); //{red:0,green:0,blue:0}
+
+  const { red, blue, green } = state;
 
   return (
     <View>
-      {/* <ColorCounter
+      <ColorCounter
         color="Red"
-        onIncrease={() =>}
-        onDecrease={() => }
+        onIncrease={() =>
+          dispatach({ colorToChange: "red", amount: COLOR_INCREMENT })
+        }
+        onDecrease={() =>
+          dispatach({ colorToChange: "red", amount: -1 * COLOR_INCREMENT })
+        }
       />
+
       <ColorCounter
         color="Green"
-        onIncrease={() => }
-        onDecrease={() => }
+        onIncrease={() =>
+          dispatach({ colorToChange: "blue", amount: COLOR_INCREMENT })
+        }
+        onDecrease={() =>
+          dispatach({ colorToChange: "blue", amount: -1 * COLOR_INCREMENT })
+        }
       />
       <ColorCounter
         color="Blue"
-        onIncrease={() => }
-        onDecrease={() => }
-      /> */}
+        onIncrease={() =>
+          dispatach({ colorToChange: "green", amount: COLOR_INCREMENT })
+        }
+        onDecrease={() =>
+          dispatach({ colorToChange: "green", amount: -1 * COLOR_INCREMENT })
+        }
+      />
       <View
         style={{
           width: 150,
