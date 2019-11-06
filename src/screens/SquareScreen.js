@@ -12,9 +12,18 @@ const reducer = (state, action) => {
       }
       return { ...state, red: state.red + action.amount };
     case "green":
-      return { ...state, red: state.red + action.amount };
+      if (
+        state.green + action.amount > 255 ||
+        state.green + action.amount < 0
+      ) {
+        return state;
+      }
+      return { ...state, green: state.green + action.amount };
     case "blue":
-      return { ...state, red: state.red + action.amount };
+      if (state.blue + action.amount > 255 || state.blue + state.amount < 0) {
+        return state;
+      }
+      return { ...state, blue: state.blue + action.amount };
     default:
       return state;
   }
@@ -42,19 +51,19 @@ const SquareScreen = () => {
       <ColorCounter
         color="Green"
         onIncrease={() =>
-          dispatach({ colorToChange: "blue", amount: COLOR_INCREMENT })
+          dispatach({ colorToChange: "green", amount: COLOR_INCREMENT })
         }
         onDecrease={() =>
-          dispatach({ colorToChange: "blue", amount: -1 * COLOR_INCREMENT })
+          dispatach({ colorToChange: "green", amount: -1 * COLOR_INCREMENT })
         }
       />
       <ColorCounter
         color="Blue"
         onIncrease={() =>
-          dispatach({ colorToChange: "green", amount: COLOR_INCREMENT })
+          dispatach({ colorToChange: "blue", amount: COLOR_INCREMENT })
         }
         onDecrease={() =>
-          dispatach({ colorToChange: "green", amount: -1 * COLOR_INCREMENT })
+          dispatach({ colorToChange: "blue", amount: -1 * COLOR_INCREMENT })
         }
       />
       <View
